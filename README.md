@@ -37,7 +37,7 @@ graph TD
     A[Raw nuScenes Dataset] -->|src/convert_nuscenes.py| B(COCO Formatted JSON);
     B -->|src/dataloader.py| C{PyTorch DataLoader};
     C -->|Batching & Augmentation| D[EfficientDet Model];
-    subgraph Training Loop (src/train.py)
+    subgraph "Training Loop (src/train.py)"
         D -- Loss Calculation --> E{Optimizer};
         E -- Update Weights --> D;
     end
