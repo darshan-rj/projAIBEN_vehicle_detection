@@ -34,17 +34,13 @@ The project follows a modular architecture that separates data processing, train
 
 ```mermaid
 graph TD
-    A[Raw nuScenes Dataset] -->|src/convert_nuscenes.py| B(COCO Formatted JSON);
-    B -->|src/dataloader.py| C{PyTorch DataLoader};
-    C -->|Batching & Augmentation| D[EfficientDet Model];
-    subgraph "Training Loop (src/train.py)"
-        D -- Loss Calculation --> E{Optimizer};
-        E -- Update Weights --> D;
-    end
-    D -- Checkpoints --> F[Trained Model (.pth)];
-    F -->|src/evaluate.py| G[COCO mAP Metrics];
-    F -->|src/export_onnx.py| H[ONNX Model (.onnx)];
-    H -->|src/benchmark_onnx.py| I[Optimized Inference];
+    A[Raw nuScenes Data] -->|convert_nuscenes.py| B(COCO JSON);
+    B -->|dataloader.py| C{PyTorch DataLoader};
+    C -->|train.py| D[EfficientDet Model];
+    D -- Training Loop --> E[Trained Model];
+    E -->|evaluate.py| F[mAP Metrics];
+    E -->|export_onnx.py| G[ONNX Model];
+    G -->|benchmark_onnx.py| H[Optimized Inference];
 ```
 
 1.  **Data Conversion**: The raw nuScenes dataset is first converted into the widely-used COCO annotation format.
