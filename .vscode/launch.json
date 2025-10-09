@@ -1,0 +1,84 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "🔧 Convert nuScenes to COCO",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/convert_nuscenes.py",
+      "args": [
+        "--nuscenes_path", "data/raw/nuscenes-mini",
+        "--output_json", "data/processed/nuscenes_mini_coco.json"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+        "name": "⚡ Benchmark EfficientDet-D0",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/src/train.py",
+        "args": ["--benchmark"],
+        "console": "integratedTerminal"
+    },
+    {
+      "name": "🧠 Train EfficientDet-D0",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/train.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "🔍 Run Inference on Single Image",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/inference.py",
+      "args": [
+        "--image_path", "data/raw/nuScenes-mini/samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402931662460.jpg"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "📦 Batch Inference",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/batch_inference.py",
+      "args": [
+        "--image_dir", "data/raw/nuscenes-mini/samples/CAM_FRONT",
+        "--output_json", "data/processed/predictions.json"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "📊 Evaluate Model (mAP)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/evaluate.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "⚡ Export ONNX Model",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/export_onnx.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "🚀 Benchmark ONNX Runtime",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/benchmark_onnx.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "🎥 Visualize with Voxel51",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/visualize.py",
+      "args": [
+        "--coco_json", "data/processed/predictions.json",
+        "--image_dir", "data/raw/nuscenes-mini/samples/CAM_FRONT"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

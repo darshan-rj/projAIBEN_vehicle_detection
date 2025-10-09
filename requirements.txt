@@ -1,0 +1,30 @@
+# Core deep learning
+torch>=2.1.0
+torchvision>=0.16.0
+# EfficientDet implementation
+effdet>=0.3.1
+# nuScenes devkit for dataset parsing
+nuscenes-devkit>=1.1.9
+# COCO annotation handling
+pycocotools>=2.0.7
+# Visualization and debugging
+opencv-python>=4.8.0
+matplotlib>=3.8.0
+tqdm>=4.66.1
+# Voxel51 for interactive dataset visualization
+fiftyone>=0.23.0
+# Data manipulation
+numpy>=1.26.0
+pandas>=2.1.1
+# YAML config parsing
+PyYAML>=6.0.1
+# ONNX export and runtime
+onnx>=1.15.0
+onnxruntime>=1.16.0
+# Jupyter for notebooks
+jupyterlab>=4.0.7
+# Optional: for debugging and profiling
+ipdb>=0.13.13
+line_profiler>=4.1.1
+# logging
+tensorboard>=2.15.0

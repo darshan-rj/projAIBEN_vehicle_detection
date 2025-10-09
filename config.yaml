@@ -1,0 +1,25 @@
+dataset:
+  root: data/raw/nuscenes-mini
+  processed: data/processed/nuscenes_mini_coco.json
+  splits:
+    train: data/splits/train.json
+    val: data/splits/val.json
+    test: data/splits/test.json
+  image_ext: .jpg
+
+model:
+  name: efficientdet-d0
+  variant: tf_efficientdet_d0
+  num_classes: 5
+  input_size: 384
+  checkpoint_dir: models/efficientdet_d0
+  onnx_output: models/onnx/efficientdet_d0.onnx
+
+training:
+  batch_size: 8
+  epochs: 10
+  lr: 0.001
+
+inference:
+  conf_threshold: 0.1
+  iou_threshold: 0.5

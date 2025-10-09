@@ -1,0 +1,17 @@
+# Ignore the large raw and processed data directory
+/data/
+
+# Ignore Python virtual environment
+/.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore editor-specific files
+/notebooks
+# Ignore log files
+*.log
+
+# Ignore Tensorboard event files
+**/tensorboard/
