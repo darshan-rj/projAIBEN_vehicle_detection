@@ -75,8 +75,9 @@
       "request": "launch",
       "program": "${workspaceFolder}/src/visualize.py",
       "args": [
-        "--coco_json", "data/processed/predictions.json",
-        "--image_dir", "data/raw/nuscenes-mini/samples/CAM_FRONT"
+        "--coco_json", "data/processed/nuscenes_mini_coco.json",
+        "--image_dir", "data/raw/nuscenes-mini/",
+        "--predictions_json", "data/processed/predictions.json"
       ],
       "console": "integratedTerminal"
     }

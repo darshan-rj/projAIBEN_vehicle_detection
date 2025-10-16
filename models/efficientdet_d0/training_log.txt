@@ -1,11 +1,11 @@
-Training Log - 2025-10-04 20:52:48.337980
-{"epoch": 1, "train_loss": 1595533.1336135864}
-{"epoch": 2, "train_loss": 12207.38205909729}
-{"epoch": 3, "train_loss": 4059.209635734558}
-{"epoch": 4, "train_loss": 2171.0647797584534}
-{"epoch": 5, "train_loss": 1428.201756477356}
-{"epoch": 6, "train_loss": 1055.9278614521027}
-{"epoch": 7, "train_loss": 845.516027212143}
-{"epoch": 8, "train_loss": 689.5734395980835}
-{"epoch": 9, "train_loss": 607.746199131012}
-{"epoch": 10, "train_loss": 534.585445523262}
+Training Log - 2025-10-14 22:05:59.594977
+{"epoch": 1, "train_loss": 1658719.2335891724}
+{"epoch": 2, "train_loss": 13212.610795974731}
+{"epoch": 3, "train_loss": 4581.365489959717}
+{"epoch": 4, "train_loss": 2529.341374397278}
+{"epoch": 5, "train_loss": 1695.1628861427307}
+{"epoch": 6, "train_loss": 1264.6509222984314}
+{"epoch": 7, "train_loss": 1001.4479684829712}
+{"epoch": 8, "train_loss": 833.4736640453339}
+{"epoch": 9, "train_loss": 716.0025012493134}
+{"epoch": 10, "train_loss": 633.9744453430176}
