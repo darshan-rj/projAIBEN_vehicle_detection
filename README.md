@@ -157,7 +157,7 @@ This section can be updated with your model's final performance metrics and samp
 | mAP_50 |   -   |
 | mAP_75 |   -   |
 
-*(Add sample prediction images here)*
+<img width="1831" height="837" alt="image" src="https://github.com/user-attachments/assets/37ad67c9-609a-4e09-b49d-d4cf5119f0d0" />
 
 ## 🤝 Contributing
 
