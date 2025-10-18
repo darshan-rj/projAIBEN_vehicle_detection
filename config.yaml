@@ -11,7 +11,7 @@ model:
   name: efficientdet-d0
   variant: tf_efficientdet_d0
   num_classes: 5
-  input_size: 384
+  input_size: 512
   checkpoint_dir: models/efficientdet_d0
   onnx_output: models/onnx/efficientdet_d0.onnx
 

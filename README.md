@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚗 Vehicle Detection with nuScenes & EfficientDet 🚀
 
 ![Python 3.12+](https://img.shields.io/badge/Python-3.12+-blue.svg)
@@ -157,7 +158,7 @@ This section can be updated with your model's final performance metrics and samp
 | mAP_50 |   -   |
 | mAP_75 |   -   |
 
-*(Add sample prediction images here)*
+<img width="1831" height="837" alt="image" src="https://github.com/user-attachments/assets/37ad67c9-609a-4e09-b49d-d4cf5119f0d0" />
 
 ## 🤝 Contributing
 
@@ -172,3 +173,6 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 ## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+=======
+# projAIBEN_nuScenes_dataset
+>>>>>>> e65b1bbd98da54b3c656d8392b562c2f0676cd14
